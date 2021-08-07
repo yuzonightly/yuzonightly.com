@@ -1,0 +1,181 @@
+@import "patterns";
+@import "writing";
+@import "licenses";
+@import "colors";
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+:after,
+:before {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  height: 100%;
+  background: $background;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 0px;
+  scroll-behavior: smooth;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.4rem;
+  font-family: "Noto Sans JP", 游ゴシック体, "Yu Gothic", 游ゴシック, system-ui,
+    "Hiragino Kaku Gothic ProN", "Hiragino Mincho Pro", Meiryo, sans-serif;
+}
+
+.header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  a {
+    font-weight: 500;
+    color: $navbar-links;
+  }
+}
+
+.header-inner {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-brand {
+  font-weight: 500;
+  color: $navbar-links;
+}
+
+.header-title_page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: fixed;
+  top: 30%;
+}
+
+.header-title_page h2 {
+  color: $hide;
+  width: 100%;
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.header-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top: solid 2px white;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 650px) {
+  .header-nav {
+    font-size: 1.2rem;
+    position: relative;
+    border-top: none;
+    margin-left: auto;
+  }
+}
+
+.header-nav ul {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.header-nav_list > * + * {
+  margin-left: 1.25rem;
+}
+
+.header-nav_list li {
+  padding: 1.1rem 0 1.1rem 0;
+}
+
+.footer {
+  flex-shrink: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 650px) {
+  .footer {
+    padding-bottom: 4.5rem;
+  }
+}
+
+.footer-socials {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  svg {
+    width: 50px;
+    padding: 0 10px 0 10px;
+    fill: $footer-links;
+    -webkit-transition: fill 0.3s ease;
+    -moz-transition: fill 0.3s ease;
+    -ms-transition: fill 0.3s ease;
+    -o-transition: fill 0.3s ease;
+    transition: fill 0.3s ease;
+
+    &:hover {
+      fill: $footer-links-hover;
+    }
+  }
+}
+
+// .not-found {
+//   font-size: 2rem;
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: center;
+//   padding: 0 15px 0 15px;
+// }

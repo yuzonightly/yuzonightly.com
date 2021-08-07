@@ -1,0 +1,127 @@
+@import "colors";
+
+//put gradient on WRITING ---
+//docker
+
+.ps {
+  overflow: hidden !important;
+  overflow-anchor: none;
+  -ms-overflow-style: none;
+  touch-action: auto;
+  -ms-touch-action: auto;
+}
+
+// .dash:after {
+//   background-color: $hide;
+//   content: "";
+//   display: block;
+//   height: 2px;
+//   width: 50px;
+//   margin-left: 10px;
+// }
+
+.content {
+  flex: 1 0 auto;
+  color: white;
+}
+
+.content-wrapper {
+  // width: 60%; // change this
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content-post_list {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 34px;
+  padding-bottom: 30px;
+  -webkit-transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.content-post_tags_wrapper {
+  padding-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.post-tag {
+  font-size: 1rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #ee4c7c;
+  color: #e3e2df;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 4px;
+  padding-right: 3px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.post-date {
+  letter-spacing: 0.04em;
+  margin-left: 13px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.post-title {
+  padding-bottom: 0.3rem;
+  font-weight: 600;
+}
+
+.post-description {
+  font-size: 1rem;
+  padding-bottom: 1.7rem;
+}
+
+.post-footer {
+  margin-top: auto;
+  display: flex;
+  font-size: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 50%,
+    white 50%,
+    rgba(255, 255, 255, 0) calc(50% + 3px),
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.post-footer > * {
+  background-color: $background;
+}
+
+.post-footer > div {
+  padding-right: 1rem;
+}
+
+.post-footer > a {
+  padding-left: 1rem;
+}
+
+.post-link {
+  color: white;
+  text-transform: capitalize;
+  transition: color 0.15s ease-out;
+}
+
+.post-link + .post-link {
+  padding-left: 0.75rem;
+  margin-left: 0.5rem;
+  border-left: solid 1px white;
+}
