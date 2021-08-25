@@ -1,58 +1,76 @@
 @import "colors";
 
-//put gradient on WRITING ---
+//different tag colors for writing and projects.
 //docker
+//add hover to post links
+//fix top padding of content
+//replace article-wrapper,post-listwrapper etc for a pattern
 
-.ps {
-  overflow: hidden !important;
-  overflow-anchor: none;
-  -ms-overflow-style: none;
-  touch-action: auto;
-  -ms-touch-action: auto;
+.article-wrapper {
+  padding-left: 8.25rem;
+  padding-right: 8.25rem;
 }
 
-// .dash:after {
-//   background-color: $hide;
-//   content: "";
-//   display: block;
-//   height: 2px;
-//   width: 50px;
-//   margin-left: 10px;
-// }
+.article-title {
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+.article-title h1 {
+  font-size: 2.25rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  padding-bottom: 20px;
+}
+
+.article-title h2 {
+  font-size: 0.85rem;
+  font-weight: 300;
+  letter-spacing: 0.15em;
+}
+
+.article-content {
+
+}
 
 .content {
   flex: 1 0 auto;
-  color: white;
+  z-index: 2;
+  color:  $default;
+  padding-top: 9.75rem;
 }
 
 .content-wrapper {
-  // width: 60%; // change this
   height: 100%;
+  width:100%;
   margin-left: auto;
   margin-right: auto;
 }
 
 .content-post_list {
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 34px;
-  padding-bottom: 30px;
-  -webkit-transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  padding-left: 8.25rem;
+  padding-right: 8.25rem;
+  // padding-left: 30px;
+  // padding-right: 30px;
+  // padding-top: 34px;
+  // padding-bottom: 30px;
+  // -webkit-transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  // transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.content-post_list > * + * {
+  margin-top: 2.75rem;
 }
 
 .content-post_tags_wrapper {
-  padding-bottom: 1rem;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  padding-bottom: 1rem;
 }
 
 .post-tag {
-  font-size: 1rem;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  background-color: #ee4c7c;
-  color: #e3e2df;
   font-weight: 700;
   letter-spacing: 0.1em;
   display: -webkit-inline-box;
@@ -65,38 +83,43 @@
   -ms-flex-align: center;
   align-items: center;
   padding-left: 4px;
-  padding-right: 3px;
+  padding-right: 4px;
   padding-top: 2px;
   padding-bottom: 2px;
 }
 
+.tag-writing {
+  background-color: $post-tag-1;
+}
+
+.tag-projects {
+  background-color: $post-tag-1;
+}
+
 .post-date {
-  letter-spacing: 0.04em;
-  margin-left: 13px;
-  font-size: 1rem;
+  margin-left: 15px;
   font-weight: 700;
+  letter-spacing: 0.04em;
 }
 
 .post-title {
-  padding-bottom: 0.3rem;
+  padding-bottom: 0.75rem;
   font-weight: 600;
 }
 
 .post-description {
-  font-size: 1rem;
-  padding-bottom: 1.7rem;
+  padding-bottom: 1.75rem;
 }
 
 .post-footer {
   margin-top: auto;
   display: flex;
-  font-size: 1rem;
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(
     to bottom,
     rgba(255, 255, 255, 0) 50%,
-    white 50%,
+    $default 60%,
     rgba(255, 255, 255, 0) calc(50% + 3px),
     rgba(255, 255, 255, 0) 100%
   );
@@ -107,6 +130,8 @@
 }
 
 .post-footer > div {
+  display: flex;
+  align-items: center;
   padding-right: 1rem;
 }
 
@@ -115,13 +140,25 @@
 }
 
 .post-link {
-  color: white;
-  text-transform: capitalize;
-  transition: color 0.15s ease-out;
+  color:  $default;
 }
 
 .post-link + .post-link {
   padding-left: 0.75rem;
   margin-left: 0.5rem;
-  border-left: solid 1px white;
+  border-left: solid 1px $default;
+}
+
+.see_post_arrow {
+    visibility: hidden;
+    opacity: 0;
+    font-weight: 900;
+    padding-left: 4px;
+    color: $post-links-hover;
+    transition:visibility 0.2s linear,opacity 0.2s linear;
+}
+
+.see_post:hover + .see_post_arrow{
+  visibility:visible;
+  opacity:1;
 }

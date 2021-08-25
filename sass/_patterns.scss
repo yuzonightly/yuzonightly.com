@@ -5,9 +5,16 @@
   user-select: none; /* Likely future */
 }
 
-.small-font {
+.ps {
+  overflow: hidden !important;
+  overflow-anchor: none;
+  -ms-overflow-style: none;
+  touch-action: auto;
+  -ms-touch-action: auto;
+}
+
+.small-font { // remove this
   font-size: 0.8rem;
-  line-height: 1;
   letter-spacing: 0.05rem;
 }
 

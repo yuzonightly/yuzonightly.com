@@ -1,11 +1,14 @@
 +++
-title = "Markdown Syntax Guide"
-date = 2020-05-14
+title = "What is What"
+date = 2017-09-24
+tags = ["cryptography", "rust", "ssg", "other"]
+
+[extra]
+abstract = "I don't know why."
+date_fmt = "Aug 25, 2021"
+links_platform = ["GitHub"]
+links_url = ["https://github.com/yuzonightly/ed25519-fun"]
 +++
-
-This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.
-
-<!-- more -->
 
 ## Headings
 
