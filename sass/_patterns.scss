@@ -1,3 +1,7 @@
+@import "colors";
+
+// put colors back to its original place
+
 .unselect {
   -webkit-user-select: none; /* Chrome all / Safari all */
   -moz-user-select: none; /* Firefox all */
@@ -13,9 +17,105 @@
   -ms-touch-action: auto;
 }
 
-.small-font { // remove this
-  font-size: 0.8rem;
-  letter-spacing: 0.05rem;
+// fonts - landing page
+.font-brand {
+  font-size: 1.25rem;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  color: $navbar-links;
+}
+
+.font-nav {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: $navbar-links;
+}
+
+.font-vertical_title {
+  font-size: 1.5vw;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: $vertical-words;
+}
+
+// about
+.font-about_title {
+  font-size: 1.75rem;
+  letter-spacing: 0.1em;
+}
+
+.font-about_text {
+  font-size: 1.25rem;
+  letter-spacing: 0.1em;
+}
+
+// post listing
+.font-post_list-title {
+}
+
+.font-post_tags {
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.font-post_title {
+  font-weight: 600;
+}
+
+.font-post_date {
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+// article
+.font-article_title {
+  font-size: 2.25rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+.font-article_info {
+  font-size: 0.85rem;
+  font-weight: 300;
+  letter-spacing: 0.15em;
+}
+
+// fade
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .pad-before-xlg {
@@ -71,41 +171,5 @@
   .wrapper-md {
     padding-left: 4rem;
     padding-right: 4rem;
-  }
-}
-
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-moz-keyframes fadein {
-  /* Firefox */
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes fadein {
-  /* Safari and Chrome */
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-o-keyframes fadein {
-  /* Opera */
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
   }
 }

@@ -5,25 +5,26 @@
 {% endblock page_title %}
 
 {% block content %}
-
 <ul class="content-post_list">
   {% for post in section.pages %}
-    <li>
-      <div class="content-post_tags_wrapper">
-        <div>
-          <span class="post-tag tag-crypto">CRYPTOGRAPHY</span>
-        </div>
-        <span class="post-date">{{ post.extra.date_fmt}}</span>
+  <li>
+    <div class="content-post_tags_wrapper">
+      <div>
+        <span class="post-tag tag-crypto">CRYPTOGRAPHY</span>
       </div>
-      <h2 class="post-title">{{ post.title }}</h2>
-      <p class="post-description">{{ post.extra.abstract }}</p>
-      <footer class="post-footer">
-        <div>
-          <a href="" class="small-font post-link">GitHub</a>
-        </div>
-        <a href="{{ post.permalink | safe }}" class="small-font"><span class="see_post">See post</span><span class="see_post_arrow">→</span></a>
-      </footer>
-    </li>
-    {% endfor %}
-  </ul>
+      <span class="post-date">{{ post.extra.date_fmt}}</span>
+    </div>
+    <h2 class="post-title">{{ post.title }}</h2>
+    <p class="post-description">{{ post.extra.abstract }}</p>
+    <footer class="post-footer">
+      <div>
+        <a href="" class="post-link">GitHub</a>
+        <a href="" class="post-link">GitHub</a>  
+      </div>
+      <a href="{{ post.permalink | safe }}" class="small-font"><span class="see_post">See post</span><span
+          class="see_post_arrow">→</span></a>
+    </footer>
+  </li>
+  {% endfor %}
+</ul>
 {% endblock content %}

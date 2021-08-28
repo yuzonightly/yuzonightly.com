@@ -3,13 +3,7 @@
 //different tag colors for writing and projects.
 //docker
 //add hover to post links
-//fix top padding of content
-//replace article-wrapper,post-listwrapper etc for a pattern
-
-.article-wrapper {
-  padding-left: 8.25rem;
-  padding-right: 8.25rem;
-}
+//fix wrapper
 
 .article-title {
   text-align: center;
@@ -17,46 +11,41 @@
 }
 
 .article-title h1 {
-  font-size: 2.25rem;
-  font-weight: 500;
-  letter-spacing: 0.1em;
   padding-bottom: 20px;
 }
 
-.article-title h2 {
-  font-size: 0.85rem;
-  font-weight: 300;
-  letter-spacing: 0.15em;
-}
-
 .article-content {
-
 }
 
 .content {
   flex: 1 0 auto;
   z-index: 2;
-  color:  $default;
-  padding-top: 9.75rem;
+  color: $default;
 }
 
+// max-width: 1380px;
+// padding-left: 90px;
+// padding-right: 90px;
+// margin-left: auto;
+// margin-right: auto;
+// margin-bottom: 100px;
 .content-wrapper {
   height: 100%;
-  width:100%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.content-post_list {
-  padding-left: 8.25rem;
-  padding-right: 8.25rem;
-  // padding-left: 30px;
-  // padding-right: 30px;
-  // padding-top: 34px;
-  // padding-bottom: 30px;
-  // -webkit-transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-  // transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
+//   .content-post_list {
+//   padding-left: 8.25rem;
+//   padding-right: 8.25rem;
+// padding-left: 30px;
+// padding-right: 30px;
+// padding-top: 34px;
+// padding-bottom: 30px;
+// -webkit-transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+// transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+// }]
 
 .content-post_list > * + * {
   margin-top: 2.75rem;
@@ -71,8 +60,6 @@
 }
 
 .post-tag {
-  font-weight: 700;
-  letter-spacing: 0.1em;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -98,13 +85,10 @@
 
 .post-date {
   margin-left: 15px;
-  font-weight: 700;
-  letter-spacing: 0.04em;
 }
 
 .post-title {
   padding-bottom: 0.75rem;
-  font-weight: 600;
 }
 
 .post-description {
@@ -139,26 +123,20 @@
   padding-left: 1rem;
 }
 
-.post-link {
-  color:  $default;
-}
-
 .post-link + .post-link {
-  padding-left: 0.75rem;
+  padding-left: 0.5rem;
   margin-left: 0.5rem;
   border-left: solid 1px $default;
 }
 
 .see_post_arrow {
-    visibility: hidden;
-    opacity: 0;
-    font-weight: 900;
-    padding-left: 4px;
-    color: $post-links-hover;
-    transition:visibility 0.2s linear,opacity 0.2s linear;
+  visibility: hidden;
+  opacity: 0;
+  padding-left: 4px;
+  transition: visibility 0.2s linear, opacity 0.2s linear;
 }
 
-.see_post:hover + .see_post_arrow{
-  visibility:visible;
-  opacity:1;
+.see_post:hover + .see_post_arrow {
+  visibility: visible;
+  opacity: 1;
 }
