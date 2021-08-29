@@ -23,18 +23,23 @@
   color: $default;
 }
 
-// max-width: 1380px;
-// padding-left: 90px;
-// padding-right: 90px;
-// margin-left: auto;
-// margin-right: auto;
-// margin-bottom: 100px;
-.content-wrapper {
-  height: 100%;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
+// .content-wrapper {
+//   max-width: 1380px;
+//   padding-left: 100px;
+//   padding-right: 100px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   margin-top: 150px;
+//   margin-bottom: 100px;
+// }
+
+// @media screen and (max-width: 900px) {
+//   .content-wrapper {
+//     padding-left: 8vw;
+//     padding-right: 8vw;
+//     margin-bottom: 16vw;
+//   }
+// }
 
 //   .content-post_list {
 //   padding-left: 8.25rem;

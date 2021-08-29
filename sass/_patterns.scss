@@ -118,46 +118,29 @@
   }
 }
 
-.pad-before-xlg {
-  padding-top: calc(7.5rem + (10 - 7.5) * ((100vw - 20rem) / (100 - 20)));
-}
-
-.pad-before {
-  padding-top: calc(2rem + (4 - 2) * ((100vw - 20rem) / (100 - 20)));
-}
-
-.pad-around {
-  padding-top: calc(2rem + (4 - 2) * ((100vw - 20rem) / (100 - 20)));
-  padding-bottom: calc(2rem + (4 - 2) * ((100vw - 20rem) / (100 - 20)));
-}
-
-.pad-around-xlg {
-  padding-top: calc(5rem + (10 - 7.5) * ((100vw - 20rem) / (100 - 20)));
-  padding-bottom: calc(7.5rem + (10 - 7.5) * ((100vw - 20rem) / (100 - 20)));
-}
-
 .wrapper-lg {
   max-width: 120rem;
 }
 
 .wrapper {
-  max-width: 100rem;
   margin-left: auto;
   margin-right: auto;
-  padding-left: calc(1rem + (8 - 1) * ((100vw - 20rem) / (100 - 20)));
-  padding-right: calc(1rem + (8 - 1) * ((100vw - 20rem) / (100 - 20)));
+  max-width: 100rem;
+  padding-left: calc(1.25rem + 7 * (100vw - 30rem) / 70);
+  padding-right: calc(1.25rem + 7 * (100vw - 30rem) / 70);
 }
 
-.wrapper-sm {
-  max-width: 55rem;
-  padding-left: calc(1rem + (4 - 1) * ((100vw - 20rem) / (100 - 20)));
-  padding-right: calc(1rem + (4 - 1) * ((100vw - 20rem) / (100 - 20)));
+.c-wrapper-md {
+  max-width: 120rem;
 }
 
-.wrapper-md {
-  max-width: 85rem;
-  padding-left: calc(1rem + (4 - 1) * ((100vw - 20rem) / (100 - 20)));
-  padding-right: calc(1rem + (4 - 1) * ((100vw - 20rem) / (100 - 20)));
+.c-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+  max-width: 100rem;
+  padding-left: calc(5rem + 10 * (100vw - 30rem) / 70);
+  padding-right: calc(5rem + 10 * (100vw - 30rem) / 70);
 }
 
 @media screen and (min-width: 100em) {
@@ -167,9 +150,9 @@
     padding-right: 8rem;
   }
 
-  .wrapper-sm,
-  .wrapper-md {
-    padding-left: 4rem;
-    padding-right: 4rem;
+  .c-wrapper,
+  .c-wrapper-md {
+    padding-left: 15rem;
+    padding-right: 15rem;
   }
 }
