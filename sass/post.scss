@@ -1,21 +1,12 @@
 @import "colors";
 
-//different tag colors for writing and projects.
-//docker
-//add hover to post links
-//fix wrapper
+//fix wrapper - make it more compact and change font
+//tag colors should be red and blue
+//link + <hr> + threedots -> markdown styles
+//push content folder to a separate repository (mirror)
 
-.article-title {
-  text-align: center;
-  padding-bottom: 70px;
-}
-
-.article-title h1 {
-  padding-bottom: 20px;
-}
-
-.article-content {
-}
+//automatic deployment
+//docker + CI
 
 .content {
   flex: 1 0 auto;
@@ -121,27 +112,61 @@
 .post-footer > div {
   display: flex;
   align-items: center;
+}
+
+.post-footer .post_external-links {
   padding-right: 1rem;
 }
 
-.post-footer > a {
+.post-footer .post_read-post {
   padding-left: 1rem;
 }
 
+.post-link {
+  border: 2px solid $navbar-links;
+  border-radius: 20px;
+  border-color: $navbar-links;
+  color: $navbar-links;
+  background-color: $background;
+  padding: 7px 15px 8px 15px;
+  transition: color 0.3s ease, background-color 0.3s ease,
+    border-color 0.3s ease;
+
+  &:hover {
+    border-color: $navbar-links-hover;
+    color: $navbar-links-hover;
+    background-color: $navbar-links-background;
+  }
+}
+
 .post-link + .post-link {
-  padding-left: 0.5rem;
   margin-left: 0.5rem;
-  border-left: solid 1px $default;
 }
 
 .see_post_arrow {
-  visibility: hidden;
-  opacity: 0;
   padding-left: 4px;
-  transition: visibility 0.2s linear, opacity 0.2s linear;
+  font-weight: 900;
+  opacity: 0;
+  transition: opacity 0.5s linear;
 }
 
-.see_post:hover + .see_post_arrow {
-  visibility: visible;
+.read-post-link:hover > .see_post_arrow {
   opacity: 1;
+}
+
+.read-post-link {
+  border: 2px solid $navbar-links;
+  border-radius: 20px;
+  border-color: $navbar-links;
+  color: $navbar-links;
+  background-color: $background;
+  padding: 7px 15px 8px 15px;
+  transition: color 0.3s ease, background-color 0.3s ease,
+    border-color 0.3s ease;
+
+  &:hover {
+    border-color: $navbar-links-hover;
+    color: $navbar-links-hover;
+    background-color: $navbar-links-background;
+  }
 }

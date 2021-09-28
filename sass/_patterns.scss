@@ -1,7 +1,5 @@
 @import "colors";
 
-// put colors back to its original place
-
 .unselect {
   -webkit-user-select: none; /* Chrome all / Safari all */
   -moz-user-select: none; /* Firefox all */
@@ -18,6 +16,12 @@
 }
 
 // fonts - landing page
+.font-yuzonightly {
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+}
+
 .font-brand {
   font-size: 1.25rem;
   font-weight: 900;
@@ -32,12 +36,12 @@
   color: $navbar-links;
 }
 
-.font-vertical_title {
-  font-size: 1.5vw;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  color: $vertical-words;
-}
+// .font-vertical_title {
+//   font-size: 1.5vw;
+//   font-weight: 700;
+//   letter-spacing: 0.1em;
+//   color: $vertical-words;
+// }
 
 // about
 .font-about_title {
@@ -81,43 +85,6 @@
   letter-spacing: 0.15em;
 }
 
-// fade
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-moz-keyframes fadein {
-  /* Firefox */
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes fadein {
-  /* Safari and Chrome */
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-o-keyframes fadein {
-  /* Opera */
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 .wrapper-lg {
   max-width: 120rem;
 }
@@ -125,6 +92,7 @@
 .wrapper {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 1.75rem;
   max-width: 100rem;
   padding-left: calc(1.25rem + 7 * (100vw - 30rem) / 70);
   padding-right: calc(1.25rem + 7 * (100vw - 30rem) / 70);
@@ -137,17 +105,25 @@
 .c-wrapper {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 150px;
   max-width: 100rem;
-  padding-left: calc(5rem + 10 * (100vw - 30rem) / 70);
-  padding-right: calc(5rem + 10 * (100vw - 30rem) / 70);
+  padding-left: calc(4rem + 10 * (100vw - 30rem) / 70);
+  padding-right: calc(4rem + 10 * (100vw - 30rem) / 70);
+}
+
+.content-wrapper {
+  margin-bottom: 150px;
+  padding-top: calc(7.5rem + 10 * (100vh - 30rem) / 70);
+}
+
+.yuzonightly-wrapper {
+  padding-top: calc(7.5rem + 10 * (100vh - 30rem) / 70);
 }
 
 @media screen and (min-width: 100em) {
   .wrapper,
   .wrapper-lg {
-    padding-left: 8rem;
-    padding-right: 8rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
 
   .c-wrapper,

@@ -1,30 +1,34 @@
 {% extends "index.html" %}
 
-{% block page_title %}
-<h2>Writing</h2>
-{% endblock page_title %}
-
 {% block content %}
-<ul class="content-post_list">
-  {% for post in section.pages %}
-  <li>
-    <div class="content-post_tags_wrapper">
-      <div>
-        <span class="post-tag tag-crypto">CRYPTOGRAPHY</span>
+<div class="c-wrapper c-wrapper-md content-wrapper ps">
+  <ul class="content-post_list">
+    {% for post in section.pages %}
+    <li>
+      <div class="content-post_tags_wrapper">
+        <div>
+          <span class="post-tag tag-crypto">CRYPTOGRAPHY</span>
+        </div>
+        <span class="post-date">{{ post.extra.date_fmt }}</span>
       </div>
-      <span class="post-date">{{ post.extra.date_fmt}}</span>
-    </div>
-    <h2 class="post-title">{{ post.title }}</h2>
-    <p class="post-description">{{ post.extra.abstract }}</p>
-    <footer class="post-footer">
-      <div>
-        <a href="" class="post-link">GitHub</a>
-        <a href="" class="post-link">GitHub</a>
-      </div>
-      <a href="{{ post.permalink | safe }}" class="small-font"><span class="see_post">See post</span><span
-          class="see_post_arrow">→</span></a>
-    </footer>
-  </li>
-  {% endfor %}
-</ul>
+      <h2 class="post-title">{{ post.title }}</h2>
+      <p class="post-description">{{ post.extra.abstract }}</p>
+      <footer class="post-footer">
+        {% if post.extra.platforms %}
+        <div class="post_external-links">
+          {% for platform in post.extra.platforms %}
+          {% set index = loop.index - 1 %}
+          <a href="{{ post.extra.platform_links[index] | safe }}" class="post-link"> {{ platform }} </a>
+          {% endfor %}
+        </div>
+        {% endif %}
+        <div class="post_read-post">
+          <a class="read-post-link" href="{{ post.permalink | safe }}"><span class="see_post">See
+              post</span><span class="see_post_arrow">→</span></a>
+        </div>
+      </footer>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
 {% endblock content %}

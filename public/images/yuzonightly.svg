@@ -1,0 +1,25 @@
+    <svg viewBox="0 0 800 200">
+        <g id="H-letter" fill="url(#skyGradient)">
+            {# <line class="Y-first-stroke" x1="300" y1="10" x2="" y2="124" stroke="white" fill="url(#skyGradient2)" stroke-width="20" /> #}
+            <line class="Y-second-stroke" x1="275" y1="80" x2="275" y2="120" stroke="white" fill="none" stroke-width="10" />
+            {# <line class="H-right-stroke" x1="84" y1="0" x2="84" y2="124" stroke="#000" fill="none" stroke-width="34" /> #}
+        </g>
+        <text text-anchor="middle" x="50%" y="50%" dy=".35em" class="animated-title" fill="url(#skyGradient)">
+            YUZONIGHTLY
+        </text>
+        <defs>
+            <linearGradient id="skyGradient" x1="100%" y1="100%">
+                <stop offset="0%" stop-color="lightblue" stop-opacity=".5">
+                    <animate attributeName="stop-color" values="lightblue;blue;red;red;black;red;red;purple;lightblue"
+                        dur="14s" repeatCount="indefinite" />
+                </stop>
+                <stop offset="100%" stop-color="lightblue" stop-opacity=".5">
+                    <animate attributeName="stop-color"
+                        values="lightblue;orange;purple;purple;black;purple;purple;blue;lightblue" dur="14s"
+                        repeatCount="indefinite" />
+                    <animate attributeName="offset" values=".95;.80;.60;.40;.20;0;.20;.40;.60;.80;.95" dur="14s"
+                        repeatCount="indefinite" />
+                </stop>
+            </linearGradient>
+        </defs>
+    </svg>

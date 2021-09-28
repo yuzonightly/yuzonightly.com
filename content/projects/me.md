@@ -6,8 +6,8 @@ tags = ["cryptography", "rust", "ssg", "other"]
 [extra]
 abstract = "I don't know why."
 date_fmt = "Aug 25, 2021"
-links_platform = ["GitHub"]
-links_url = ["https://github.com/yuzonightly/ed25519-fun"]
+platforms = ["GitHub"]
+platform_links = ["https://github.com/yuzonightly/ed25519-fun"]
 +++
 
 ## Headings

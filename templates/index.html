@@ -22,21 +22,18 @@
 <body>
 
   <header class="header">
-    <div class="wrapper wrapper-lg"> // change this
+    <div class="wrapper wrapper-lg">
       <div class="header-inner">
         <a href="{{config.base_url}}/">
           <span class="header-brand font-brand">YUZONIGHTLY</span>
         </a>
         <div class="header-title_page font-vertical_title">
-          {% block page_title %}
-          <h2>YuzoNightly</h2>
-          {% endblock page_title %}
         </div>
         <nav class="header-nav">
           <ul class="header-nav_list font-nav">
-            <li><a href="{{config.base_url}}/about">About</a></li>
-            <li><a href="{{config.base_url}}/writing">Writing</a></li>
-            <li><a href="{{config.base_url}}/projects">Projects</a></li>
+            <li><a class="site-nav-item" href="{{config.base_url}}/about">About</a></li>
+            <li><a class="site-nav-item" href="{{config.base_url}}/writing">Writing</a></li>
+            <li><a class="site-nav-item" href="{{config.base_url}}/projects">Projects</a></li>
           </ul>
         </nav>
       </div>
@@ -44,13 +41,44 @@
   </header>
 
   <div class="content">
+    {% block content %}
     <div class="c-wrapper c-wrapper-md ps">
-      {% block content %}
-
-      {% endblock content %}
+      <div class="yuzonightly-wrapper">
+        <svg viewBox="0 0 500 200">
+          <g id="Y-letter">
+            {# 275,112 275,91 295,63 #}
+            <polyline points="100,112 100,91 120,63" class="Y-stroke" stroke="white" fill="none" stroke-width="10" />
+          </g>
+          <g id="Y-letter-reversed">
+            {# 525,87 525,108 505,136 #}
+            <polyline points="400,87 400,108 380,136" class="Y-reversed-stroke" stroke="white" fill="none"
+              stroke-width="10" />
+          </g>
+          <text class="font-yuzonightly" text-anchor="middle" x="50%" y="50%" dy=".35em" fill="url(#titleGradient)">
+            YUZONIGHTLY
+          </text>
+          <defs>
+            <linearGradient id="titleGradient" x1="100%" y1="100%">
+              <stop offset="0%" stop-color="lightblue" stop-opacity=".5">
+                <animate attributeName="stop-color" values="lightblue;blue;red;red;black;red;red;purple;lightblue"
+                  dur="14s" repeatCount="indefinite" />
+              </stop>
+              <stop offset="100%" stop-color="lightblue" stop-opacity=".5">
+                <animate attributeName="stop-color"
+                  values="lightblue;orange;purple;purple;black;purple;purple;blue;lightblue" dur="14s"
+                  repeatCount="indefinite" />
+                <animate attributeName="offset" values=".95;.80;.60;.40;.20;0;.20;.40;.60;.80;.95" dur="14s"
+                  repeatCount="indefinite" />
+              </stop>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
     </div>
+    {% endblock content %}
   </div>
 
+  {% block footer %}
   <footer>
     <div class="footer">
       <div class="footer-socials">
@@ -89,6 +117,7 @@
       </div>
     </div>
   </footer>
+  {% endblock footer %}
 
 </body>
 

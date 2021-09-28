@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
-
+@import "fonts";
 @import "patterns";
-@import "writing";
+
+@import "post";
 @import "colors";
+@import "page";
 
 * {
   margin: 0;
@@ -55,14 +56,16 @@ body {
   padding-bottom: 1rem;
   a {
     color: $navbar-links;
-    -webkit-transition: color 0.3s ease;
-    -moz-transition: color 0.3s ease;
-    -ms-transition: color 0.3s ease;
-    -o-transition: color 0.3s ease;
-    transition: color 0.3s ease;
+    background-color: $background;
+  }
+  .site-nav-item {
+    border-radius: 20px;
+    padding: 7px 15px 8px 15px;
+    transition: color 0.75s ease, background-color 0.75s ease;
 
     &:hover {
       color: $navbar-links-hover;
+      background-color: $navbar-links-background;
     }
   }
 }
@@ -83,14 +86,14 @@ body {
   top: 30%;
 }
 
-.header-title_page h2 {
-  width: 100%;
-  background-color: transparent;
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-  -webkit-transform-origin: 0 0;
-  transform-origin: 0 0;
-}
+// .header-title_page h2 {
+//   width: 100%;
+//   background-color: transparent;
+//   -ms-transform: rotate(90deg);
+//   transform: rotate(90deg);
+//   -webkit-transform-origin: 0 0;
+//   transform-origin: 0 0;
+// }
 
 .header-nav {
   z-index: 3;
@@ -119,9 +122,9 @@ body {
   align-items: center;
 }
 
-.header-nav_list > * + * {
-  margin-left: 1.25rem;
-}
+// .header-nav_list > * + * {
+//   margin-left: 0.25rem;
+// }
 
 .header-nav_list li {
   padding: 1.1rem 0 1.1rem 0;
@@ -149,11 +152,7 @@ body {
     width: 50px;
     padding: 0 10px 0 10px;
     fill: $footer-links;
-    -webkit-transition: fill 0.3s ease;
-    -moz-transition: fill 0.3s ease;
-    -ms-transition: fill 0.3s ease;
-    -o-transition: fill 0.3s ease;
-    transition: fill 0.3s ease;
+    transition: fill 0.5s ease;
 
     &:hover {
       fill: $footer-links-hover;
@@ -163,6 +162,24 @@ body {
 
 .about {
   text-align: center;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $scrollbar-thumb-background;
+  border-radius: 6px;
+  border: 0;
+}
+::-webkit-scrollbar-track {
+  background: $scrollbar-track-background;
+}
+
+::selection {
+  color: $selection;
+  background-color: $selection-background;
 }
 
 // hr {

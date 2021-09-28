@@ -1,13 +1,11 @@
 {% extends "index.html" %}
 
-{% block page_title %}
-<h2>About</h2>
-{% endblock page_title %}
-
 {% block content %}
-<div class="about">
-  <h1>Yuzo</h1>
-  <div>...</div>
-  <p>{{ page.content | safe }}</p>
+<div class="c-wrapper c-wrapper-md content-wrapper ps">
+  <div class="about">
+    <h1>Yuzo</h1>
+    <p>· · ·</p>
+    <p>{{ page.content | safe }}</p>
+  </div>
 </div>
 {% endblock content %}
