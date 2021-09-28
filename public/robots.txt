@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://yuzonightly.com/sitemap.xml
