@@ -1,6 +1,8 @@
 +++
 title = "What is What"
 date = 2017-09-24
+
+[taxonomies]
 tags = ["cryptography", "rust", "ssg", "other"]
 
 [extra]

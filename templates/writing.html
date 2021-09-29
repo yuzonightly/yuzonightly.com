@@ -6,9 +6,13 @@
     {% for post in section.pages %}
     <li>
       <div class="content-post_tags_wrapper">
+        {% if post.taxonomies.tags %}
         <div>
-          <span class="post-tag tag-crypto">CRYPTOGRAPHY</span>
+          {% for tag in post.taxonomies.tags %}
+          <span class="post-tag tag-writing font-post_tags">{{ tag }}</span>
+          {% endfor %}
         </div>
+        {% endif %}
         <span class="post-date">{{ post.extra.date_fmt }}</span>
       </div>
       <h2 class="post-title">{{ post.title }}</h2>

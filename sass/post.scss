@@ -5,7 +5,6 @@
 //link + <hr> + threedots -> markdown styles
 //push content folder to a separate repository (mirror)
 
-//automatic deployment
 //docker + CI
 
 .content {
@@ -65,22 +64,24 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-left: 4px;
-  padding-right: 4px;
+  border-radius: 3px;
+  padding-left: 7px;
+  padding-right: 7px;
   padding-top: 2px;
-  padding-bottom: 2px;
+  padding-bottom: 6px;
+  margin-right: 12px;
 }
 
 .tag-writing {
-  background-color: $post-tag-1;
+  background-color: $post-tag-writing;
 }
 
 .tag-projects {
-  background-color: $post-tag-1;
+  background-color: $post-tag-projects;
 }
 
 .post-date {
-  margin-left: 15px;
+  margin-left: 12px;
 }
 
 .post-title {
@@ -146,13 +147,13 @@
 .see_post_arrow {
   padding-left: 4px;
   font-weight: 900;
-  opacity: 0;
-  transition: opacity 0.5s linear;
+  // opacity: 0;
+  // transition: opacity 0.5s linear;
 }
 
-.read-post-link:hover > .see_post_arrow {
-  opacity: 1;
-}
+// .read-post-link:hover > .see_post_arrow {
+//   opacity: 1;
+// }
 
 .read-post-link {
   border: 2px solid $navbar-links;

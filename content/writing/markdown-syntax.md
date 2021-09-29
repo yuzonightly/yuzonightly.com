@@ -1,6 +1,8 @@
 +++
 title = "What is Me"
 date = 2017-09-25
+
+[taxonomies]
 tags = ["cryptography", "rust", "ssg", "other"]
 
 [extra]
