@@ -48,28 +48,22 @@
 
 .content-post_tags_wrapper {
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   padding-bottom: 1rem;
 }
 
+.content-post_tags_wrapper div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .post-tag {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   border-radius: 3px;
   padding-left: 7px;
   padding-right: 7px;
   padding-top: 2px;
-  padding-bottom: 6px;
+  padding-bottom: 5px;
   margin-right: 12px;
+  margin-bottom: 7px;
 }
 
 .tag-writing {
@@ -146,7 +140,7 @@
 
 .see_post_arrow {
   padding-left: 4px;
-  font-weight: 900;
+  font-weight: 700;
   // opacity: 0;
   // transition: opacity 0.5s linear;
 }
