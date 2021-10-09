@@ -15,7 +15,7 @@ platform_links = ["https://github.com/yuzonightly/personal-site-posts"]
 # Linux
 
 ```bash
-cd ~
+cd ~/he/he/
 ```
 
 # Hardhat
@@ -27,4 +27,12 @@ npx hardhat node
 
 ```bash
 npx hardhat run scripts/deploy.js --network localhost
+```
+
+# GitHub
+
+Last commit gone!
+
+```bash
+git reset --soft HEAD~1
 ```
