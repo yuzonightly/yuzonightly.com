@@ -12,13 +12,13 @@ platforms = ["GitHub"]
 platform_links = ["https://github.com/yuzonightly/personal-site-posts"]
 +++
 
-# Linux
+## Linux
 
 ```bash
 cd ~/he/he/
 ```
 
-# Hardhat
+## Hardhat
 
 ```bash
 npx hardhat compile
@@ -29,7 +29,7 @@ npx hardhat node
 npx hardhat run scripts/deploy.js --network localhost
 ```
 
-# GitHub
+## GitHub
 
 Last commit gone!
 
