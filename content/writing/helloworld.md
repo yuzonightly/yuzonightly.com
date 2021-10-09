@@ -24,18 +24,19 @@ fn main() {
     // Print text to the console
     println!("Hello World!");
 }
-// Everything is ignored by the compiler, we just don't know it yet. They are free to create anything they want!
+// Everything is ignored by the compiler, we just don't know it yet.
+// They are free to create anything they desire!
 ```
 
 Then we compile.
 
 ```bash
-$ rustc hello.rs
+rustc hello.rs
 ```
 
-And finally `Hello World!`.
+And finally we execute!
 
 ```bash
 $ ./hello
-Hello World!
+Hello Universe!
 ```
