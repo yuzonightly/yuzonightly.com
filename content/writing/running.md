@@ -4,7 +4,7 @@ date = 2021-10-10
 draft = true
 
 [taxonomies]
-tags = ["running"]
+tags = ["Running"]
 
 [extra]
 abstract = "The outside world."
