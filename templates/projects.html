@@ -7,11 +7,9 @@
     <li>
       <div class="content-post_tags_wrapper">
         {% if post.taxonomies.tags %}
-        <div class="tags-flex-wrapper">
-          {% for tag in post.taxonomies.tags %}
-          <span class="post-tag tag-projects font-post_tags">{{ tag }}</span>
-          {% endfor %}
-        </div>
+        {% for tag in post.taxonomies.tags %}
+        <span class="post-tag tag-projects font-post_tags">{{ tag }}</span>
+        {% endfor %}
         {% endif %}
         <span class="post-date">{{ post.extra.date_fmt }}</span>
       </div>
