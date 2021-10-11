@@ -3,7 +3,7 @@ title = "It is Me!"
 date = 2021-09-30
 
 [taxonomies]
-tags = ["web"]
+tags = ["Web"]
 
 [extra]
 abstract = "This site's source code."
