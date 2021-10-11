@@ -9,7 +9,7 @@ tags = ["Hello", "World!"]
 abstract = "Hello World!"
 date_fmt = "Sep 29, 2021"
 platforms = ["GitHub"]
-platform_links = ["https://github.com/yuzonightly"]
+platform_links = ["https://github.com/yuzonightly/yuzonightly"]
 +++
 
 We code.
