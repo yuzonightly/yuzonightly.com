@@ -48,6 +48,7 @@ body {
   font-family: "Noto Sans JP", sans-serif;
 }
 
+// navbar
 .header {
   position: absolute;
   left: 0;
@@ -130,6 +131,7 @@ body {
   padding: 1.1rem 0 1.1rem 0;
 }
 
+// footer
 .footer {
   flex-shrink: 0;
   z-index: 2;
@@ -160,10 +162,55 @@ body {
   }
 }
 
+// about tab
 .about {
   text-align: center;
 }
 
+// title animation
+.Y-stroke {
+  stroke-dasharray: 56px;
+  stroke-dashoffset: 56px;
+  animation: Y-move 20s ease forwards;
+}
+
+.Y-reversed-stroke {
+  stroke-dasharray: 56px;
+  stroke-dashoffset: 56px;
+  animation: Y-reversed-move 20s ease forwards;
+}
+
+@keyframes Y-move {
+  0% {
+    stroke-dashoffset: 56px;
+  }
+  5% {
+    stroke-dashoffset: 56px;
+  }
+  10% {
+    stroke-dashoffset: 0px;
+  }
+  100% {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@keyframes Y-reversed-move {
+  0% {
+    stroke-dashoffset: 56px;
+  }
+  5% {
+    stroke-dashoffset: 56px;
+  }
+  10% {
+    stroke-dashoffset: 0px;
+  }
+  100% {
+    stroke-dashoffset: 0px;
+  }
+}
+
+// selection + scrollbar
 ::-webkit-scrollbar {
   width: 10px;
 }
