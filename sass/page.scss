@@ -203,7 +203,7 @@
 .article-content kbd {
   display: inline-block;
   padding: 3px 5px;
-  font: 11px SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  font: 11px "Fira Code", monospace;
   line-height: 10px;
   color: #444d56;
   vertical-align: middle;
@@ -615,7 +615,7 @@
 .article-content kbd {
   display: inline-block;
   padding: 3px 5px;
-  font: 11px SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  font: 11px "Fira Code", monospace;
   line-height: 10px;
   color: #444d56;
   vertical-align: middle;
@@ -701,7 +701,7 @@
 .article-content h1,
 .article-content h2 {
   padding-bottom: 0.3em;
-  border-bottom: 1px solid #eaecef;
+  // border-bottom: 1px solid #eaecef;
 }
 
 .article-content h2 {
@@ -845,6 +845,7 @@
   line-height: 1.45;
   background-color: #f6f8fa;
   border-radius: 3px;
+  border-left: 1px solid white;
 }
 
 .article-content pre code {

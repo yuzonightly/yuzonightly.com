@@ -76,6 +76,9 @@
 
 .post-date {
   margin-left: 12px;
+  // align with tags
+  padding-top: 2px;
+  padding-bottom: 5px;
 }
 
 .post-title {
@@ -126,11 +129,21 @@
   padding: 7px 15px 8px 15px;
   transition: color 0.3s ease, background-color 0.3s ease,
     border-color 0.3s ease;
+}
 
+.post-link-writing {
   &:hover {
-    border-color: $navbar-links-hover;
-    color: $navbar-links-hover;
-    background-color: $navbar-links-background;
+    border-color: $post-tag-writing;
+    color: $post-tag-color;
+    background-color: $post-tag-writing;
+  }
+}
+
+.post-link-projects {
+  &:hover {
+    border-color: $post-tag-projects;
+    color: $post-tag-color;
+    background-color: $post-tag-projects;
   }
 }
 
@@ -159,9 +172,9 @@
   transition: color 0.3s ease, background-color 0.3s ease,
     border-color 0.3s ease;
 
-  &:hover {
-    border-color: $navbar-links-hover;
-    color: $navbar-links-hover;
-    background-color: $navbar-links-background;
-  }
+  // &:hover {
+  //   border-color: $navbar-links-hover;
+  //   color: $navbar-links-hover;
+  //   background-color: $navbar-links-background;
+  // }
 }

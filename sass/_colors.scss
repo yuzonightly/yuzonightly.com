@@ -1,26 +1,26 @@
 $background: #0e0b2a;
-$default: #e3e2df;
+$default: #f1f1f1;
 
 $vertical-words: #ee4c7c;
-$navbar-links: #e3e2df;
+$navbar-links: #f1f1f1;
 $navbar-links-hover: white;
 $navbar-links-background: #3e3c55;
 
 $footer-links: #ee4c7c;
 $footer-links-hover: white;
 
-$post-tag-writing: 	#fee5fa;
+$post-tag-writing: #fee5fa;
 $post-tag-projects: #e1fef9;
+$post-tag-color: black;
 $post-links-hover: white;
 
-$article-words: #e3e2df;
-$article-code-background: #fbdce9;
-
-$article-text-highlight: #fbdde9;
-$article-text-code: #a53658;
+$article-words: white;
+$article-code-background: $background;
+$article-text-highlight: $article-code-background;
+$article-text-code: rgb(255, 208, 249);
 
 $scrollbar-track-background: $background;
 $scrollbar-thumb-background: #ee4c7c;
 
-$selection: #e3e2df;
-$selection-background: #5f1e32;
+$selection: white;
+$selection-background: rgb(68, 0, 0);

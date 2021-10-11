@@ -24,12 +24,12 @@
         <div class="post_external-links">
           {% for platform in post.extra.platforms %}
           {% set index = loop.index - 1 %}
-          <a href="{{ post.extra.platform_links[index] | safe }}" class="post-link"> {{ platform }} </a>
+          <a href="{{ post.extra.platform_links[index] | safe }}" class="post-link post-link-writing"> {{ platform }} </a>
           {% endfor %}
         </div>
         {% endif %}
         <div class="post_read-post">
-          <a class="read-post-link" href="{{ post.permalink | safe }}"><span class="see_post">See
+          <a class="read-post-link post-link-writing" href="{{ post.permalink | safe }}"><span class="see_post">See
               post</span><span class="see_post_arrow">→</span></a>
         </div>
       </footer>
