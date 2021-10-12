@@ -1013,11 +1013,11 @@
 
 .article-content code {
   background-color: $article-text-highlight !important;
-  color: $article-text-code;
-  font-weight: 900;
+  color: $article-text-code !important;
+  font-weight: 900 !important;
 }
 
 .article-content code > span {
   background-color: $article-code-background !important;
-  font-weight: 900;
+  font-weight: 900 !important;
 }
