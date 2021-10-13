@@ -845,7 +845,6 @@
   line-height: 1.45;
   background-color: #f6f8fa;
   border-radius: 3px;
-  border-left: 1px solid white;
 }
 
 .article-content pre code {
@@ -1020,4 +1019,9 @@
 .article-content code > span {
   background-color: $article-code-background !important;
   font-weight: 900 !important;
+}
+
+.article-content .highlight pre,
+.article-content pre {
+  border-left: 2px solid $scrollbar-thumb-background !important;
 }
