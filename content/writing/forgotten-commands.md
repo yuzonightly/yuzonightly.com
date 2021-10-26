@@ -14,14 +14,13 @@ platform_links = ["https://github.com/yuzonightly/personal-site-posts"]
 
 ## Linux
 
-```bash
-cd ~/he/he/
-```
-
 ## Hardhat
 
 ```bash
 npx hardhat compile
+```
+
+```bash
 npx hardhat node
 ```
 
@@ -31,8 +30,10 @@ npx hardhat run scripts/deploy.js --network localhost
 
 ## GitHub
 
-Last commit gone!
-
 ```bash
 git reset --soft HEAD~1
+```
+
+```bash
+git merge origin/main
 ```
