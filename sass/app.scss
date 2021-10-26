@@ -4,6 +4,7 @@
 @import "post";
 @import "colors";
 @import "page";
+@import "about-license";
 
 * {
   margin: 0;
@@ -162,19 +163,16 @@ body {
   }
 }
 
-// about tab
-.about {
-  text-align: center;
-}
-
 // title animation
 .Y-stroke {
+  stroke: $post-tag-writing;
   stroke-dasharray: 56px;
   stroke-dashoffset: 56px;
   animation: Y-move 20s ease forwards;
 }
 
 .Y-reversed-stroke {
+  stroke: $post-tag-projects;
   stroke-dasharray: 56px;
   stroke-dashoffset: 56px;
   animation: Y-reversed-move 20s ease forwards;

@@ -9,15 +9,16 @@ $navbar-links-background: #3e3c55;
 $footer-links: #ee4c7c;
 $footer-links-hover: white;
 
-$post-tag-writing: rgb(254, 229, 250);
-$post-tag-projects: rgb(225, 254, 249);
+$post-tag-writing: #ffc2eb;
+$post-tag-projects: #9effc6;
 $post-tag-color: black;
 $post-links-hover: white;
 
 $article-words: white;
 $article-code-background: $background;
 $article-text-highlight: $article-code-background;
-$article-text-code: rgb(249, 75, 255);
+// $article-text-code: rgb(249, 75, 255);
+$article-text-code: #fea3e8;
 
 $scrollbar-track-background: $background;
 $scrollbar-thumb-background: #ee4c7c;
