@@ -7,7 +7,7 @@ draft = true
 tags = ["Running"]
 
 [extra]
-abstract = "The outside world."
+abstract = "The outside world -_-."
 date_fmt = "Last Updated: Aug 10, 2021"
 platforms = ["GitHub"]
 platform_links = ["https://github.com/yuzonightly"]

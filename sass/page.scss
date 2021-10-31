@@ -1025,3 +1025,8 @@
 .article-content pre {
   border-left: 2px solid $scrollbar-thumb-background !important;
 }
+
+.article-content ul,
+ol {
+  list-style: disc;
+}

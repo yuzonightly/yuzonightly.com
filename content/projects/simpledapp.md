@@ -4,11 +4,11 @@ date = 2021-10-09
 draft = true
 
 [taxonomies]
-tags = ["DApp"]
+tags = ["DApp", "Solana"]
 
 [extra]
 abstract = "A simple decentralized application."
 date_fmt = "09 Oct, 2021"
 platforms = ["GitHub"]
-platform_links = ["https://github.com/yuzonightly/dapp-discovery"]
+platform_links = ["https://github.com/yuzonightly/solana-discovery"]
 +++

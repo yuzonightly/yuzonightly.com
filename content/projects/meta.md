@@ -12,4 +12,4 @@ platforms = ["GitHub"]
 platform_links = ["https://github.com/yuzonightly/yuzonightly.com"]
 +++
 
-Built with `Zola` and `Netlify`.
+Built with `Zola` and `Netlify`!

@@ -6,13 +6,13 @@ date = 2021-09-29
 tags = ["Hello", "World!"]
 
 [extra]
-abstract = "Hello World!"
+abstract = "First post."
 date_fmt = "Sep 29, 2021"
 platforms = ["GitHub"]
 platform_links = ["https://github.com/yuzonightly/yuzonightly"]
 +++
 
-We code.
+Welcome.
 
 ```rust
 // This is a comment, and is ignored by the compiler
@@ -28,13 +28,13 @@ fn main() {
 // They are free to create anything they desire!
 ```
 
-Then we compile.
+Welcome...
 
 ```bash
 rustc hello.rs
 ```
 
-And finally we execute!
+Welcome!
 
 ```bash
 $ ./hello

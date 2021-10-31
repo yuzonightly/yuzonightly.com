@@ -7,21 +7,22 @@ tags = ["Linux"]
 
 [extra]
 abstract = "A simple list of commands."
-date_fmt = "Oct 7, 2021"
+date_fmt = "Last Updated: Oct 7, 2021"
 platforms = ["GitHub"]
 platform_links = ["https://github.com/yuzonightly/personal-site-posts"]
 +++
 
-## Linux
+#
 
-```bash
-cd ~/he/he/
-```
+## Linux
 
 ## Hardhat
 
 ```bash
 npx hardhat compile
+```
+
+```bash
 npx hardhat node
 ```
 
@@ -31,8 +32,10 @@ npx hardhat run scripts/deploy.js --network localhost
 
 ## GitHub
 
-Last commit gone!
-
 ```bash
 git reset --soft HEAD~1
+```
+
+```bash
+git merge origin/main
 ```
