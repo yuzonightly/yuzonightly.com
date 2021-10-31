@@ -1,7 +1,7 @@
 +++
 title = "AI Notes"
 date = 2021-10-30
-draft = false
+draft = true
 
 [taxonomies]
 tags = ["AI"]
