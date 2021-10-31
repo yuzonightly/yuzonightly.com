@@ -7,10 +7,12 @@ tags = ["Linux"]
 
 [extra]
 abstract = "A simple list of commands."
-date_fmt = "Oct 7, 2021"
+date_fmt = "Last Updated: Oct 7, 2021"
 platforms = ["GitHub"]
 platform_links = ["https://github.com/yuzonightly/personal-site-posts"]
 +++
+
+#
 
 ## Linux
 
