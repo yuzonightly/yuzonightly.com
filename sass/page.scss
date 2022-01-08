@@ -10,9 +10,9 @@
   padding-bottom: 20px;
 }
 
-.article-content p {
-  padding-bottom: 2rem;
-}
+// .article-content p {
+//   padding-bottom: 2rem;
+// }
 
 .article-content .octicon {
   display: inline-block;
@@ -1004,7 +1004,21 @@
   vertical-align: middle;
 }
 
-// from this point forward
+// from this point forward (overwritten css rules)
+.article-content h1,
+.article-content h2 {
+  letter-spacing: 0.1em;
+  margin-top: 16px;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.article-content p {
+  letter-spacing: 0.5px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .article-content .highlight pre,
 .article-content pre {
   background-color: $article-code-background !important;
@@ -1014,6 +1028,7 @@
   background-color: $article-text-highlight !important;
   color: $article-text-code !important;
   font-weight: 900 !important;
+  letter-spacing: 0.5px;
 }
 
 .article-content code > span {
@@ -1027,6 +1042,6 @@
 }
 
 .article-content ul,
-ol {
+.article-content ol {
   list-style: disc;
 }

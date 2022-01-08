@@ -20,7 +20,8 @@
         <div class="post_external-links">
           {% for platform in post.extra.platforms %}
           {% set index = loop.index - 1 %}
-          <a href="{{ post.extra.platform_links[index] | safe }}" class="post-link post-link-projects"> {{ platform }} </a>
+          <a href="{{ post.extra.platform_links[index] | safe }}" class="post-link post-link-projects"> {{ platform }}
+          </a>
           {% endfor %}
         </div>
         {% endif %}

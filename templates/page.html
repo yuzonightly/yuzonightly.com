@@ -1,15 +1,19 @@
 {% extends "index.html" %}
 
+{% block header %}
+{% endblock header %}
+
 {% block content %}
-<div class="c-wrapper c-wrapper-md content-wrapper ps">
+<div class="c-wrapper c-wrapper-md article-content-wrapper ps">
     <article class="article-wrapper">
         <div class="article-title">
-            <h1>{{ page.title }}</h1>
-            <h2>{{ page.extra.date_fmt }}</h2>
+            <h1 class="font-article_title">{{ page.title }}</h1>
+            <h2 class="font-article_info">{{ page.extra.date_fmt }}</h2>
         </div>
         <div class="article-content">{{ page.content | safe }}</div>
     </article>
 </div>
 {% endblock content %}
+
 {% block footer %}
 {% endblock footer %}

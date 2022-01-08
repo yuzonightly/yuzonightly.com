@@ -77,12 +77,12 @@
 .font-article_title {
   font-size: 2.25rem;
   font-weight: 500;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.0375em;
 }
 
 .font-article_info {
   font-size: 0.85rem;
-  font-weight: 300;
+  font-weight: 500;
   letter-spacing: 0.15em;
 }
 
@@ -114,6 +114,11 @@
 .content-wrapper {
   margin-bottom: 150px;
   padding-top: calc(7.5rem + 10 * (100vh - 30rem) / 70);
+}
+
+.article-content-wrapper {
+  margin-bottom: 150px;
+  padding-top: calc(3.75rem + 10 * (100vh - 30rem) / 70);
 }
 
 .yuzonightly-wrapper {

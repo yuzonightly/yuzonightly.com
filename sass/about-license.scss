@@ -1,17 +1,19 @@
+@import "colors";
+
 // about/license
 .center {
   text-align: center;
 }
 
 .triple-dot {
-  color: #feb1f5;
+  color: $triple-dots;
   font-weight: 900;
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
 }
 
 hr {
-  border-top: solid 1px #cf4c98;
+  border-top: solid 1px $hr;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }

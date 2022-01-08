@@ -12,7 +12,7 @@
 
   <title>{% block title %}{{ config.title }}{% endblock title %}</title>
 
-  <link rel="icon" href="{{ get_url(path="images/favicon.svg", trailing_slash=false) }}">
+  <link rel="icon" href='{{ get_url(path="images/favicon.svg", trailing_slash=false) }}'>
 
   <!-- JS -->
   {% if config.extra.katex_enable %}
@@ -33,12 +33,13 @@
   {% endif %}
 
   <!-- CSS -->
-  <link rel="stylesheet" href="{{ get_url(path="app.css", trailing_slash=false) }}">
+  <link rel="stylesheet" href='{{ get_url(path="app.css", trailing_slash=false) }}'>
 
 </head>
 
 <body>
 
+  {% block header %}
   <header class="header">
     <div class="wrapper wrapper-lg">
       <div class="header-inner">
@@ -57,6 +58,7 @@
       </div>
     </div>
   </header>
+  {% endblock header %}
 
   <div class="content">
     {% block content %}

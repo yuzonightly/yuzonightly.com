@@ -12,9 +12,47 @@ platforms = ["GitHub"]
 platform_links = ["https://github.com/yuzonightly/personal-site-posts"]
 +++
 
-#
+## Docker
 
-## Linux
+```bash
+docker pull <image>
+```
+
+```bash
+docker image rm <image>
+```
+
+Specify port number for *host* and *container*.
+
+```bash
+docker run -d -p<host>:<container> <image>
+```
+
+```bash
+docker run -d --name <name> <image>
+```
+
+```bash
+docker image rm <image>
+```
+
+List all containers.
+
+```bash
+docker ps -a
+```
+
+List images.
+
+```bash
+docker images
+```
+
+Show logs for the specified container.
+
+```bash
+docker logs <container>
+```
 
 ## Hardhat
 
