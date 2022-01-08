@@ -1,13 +1,15 @@
-# WIP
+# www.yuzonightly.com
 
-This is a work in progress.
+Personal site.
 
-## www.yuzonightly.com
+## Prerequisites
 
-This is my personal site.
+Install [zola](https://www.getzola.org/).
 
-## Run local server after installing ```zola```
+## Run
+
+Run a local server:
 
 ```bash
-$ zola serve
+zola serve
 ```
