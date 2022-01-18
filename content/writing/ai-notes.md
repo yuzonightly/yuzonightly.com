@@ -13,7 +13,7 @@ platforms = ["GitHub"]
 platform_links = ["https://github.com/yuzonightly/AI-IDS"]
 +++
 
-# Introduction
+## Introduction
 
 AI notes (study) prior to my AI based Intrusion Detection System project.
 
@@ -21,7 +21,7 @@ AI notes (study) prior to my AI based Intrusion Detection System project.
 - Unsupervised learning
 - Deep learning
 
-## Supervised Learning
+### Supervised Learning
 
 - Dataset
 - Training set &#8594; learning algorithm &#8594; hypothesis
