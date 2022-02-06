@@ -105,9 +105,5 @@ git pull
 ## sea-plus
 
 ```bash
-
-```
-
-```bash
-
+protoc -I <dir> 
 ```

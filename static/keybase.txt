@@ -1,22 +1,69 @@
+==================================================================
+https://keybase.io/yuzonightly
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://yuzonightly.com
+  * I am yuzonightly (https://keybase.io/yuzonightly) on keybase.
+  * I have a public key with fingerprint EACE EC61 9184 0799 4DB8  EF38 4527 8325 7447 8522
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101eec580d20da0c24769cef6448b63abca8030fb7aa316b4396938d3177f67dd820a",
+      "fingerprint": "eaceec61918407994db8ef384527832574478522",
+      "host": "keybase.io",
+      "key_id": "4527832574478522",
+      "kid": "0101eec580d20da0c24769cef6448b63abca8030fb7aa316b4396938d3177f67dd820a",
+      "uid": "8c2b8ee136440d6e7b1fed7aaa811f19",
+      "username": "yuzonightly"
+    },
+    "service": {
+      "hostname": "yuzonightly.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1644108207,
+  "expire_in": 157680000,
+  "prev": "34970c67e3aa0dc4732a075fb3dff84e1f2379ca225d92f438a28808efbde761",
+  "seqno": 35,
+  "tag": "signature"
+}
+
+which yields the signature:
+
 -----BEGIN PGP MESSAGE-----
 Version: Keybase OpenPGP v2.1.13
 Comment: https://keybase.io/crypto
 
-yMIkAnicrVJbSFRBGN7NUtsQgi5GN2nsocBk5txmzhYYhg9lDyVFVuY255w57mF1
-z7p7vKylFRparWA3YqGbDxWUkD3Y7alkkURW0oeSrBAqosAkutFD1hypp3psXoaZ
-//u++f5v/lROhsfnvTPVkfia8yrLO/TwQp2H0pyvB4BmG3HgPwBCbGZj1QaLOYGQ
-ZQA/gAgixnSZQEOABoW6IGFF1ZmpSBLRFJFqOiVQhKaGKRWRokmiqqgiMUSEsalg
-wyACpKAAmFa4ikUjUSvscFlGda6qIBURCWJVlQyNMFMkkixgIgoyliRMZEHgxKAd
-cxncnEZjrNCy+R0/BGbs/QP/n33XzcgRXeAGGRI5HRoKwxoymcGplCBkItUFxlg0
-TGsYR8frmuywVRV0quOguQDwQr2lMzdbt5m/QYW6XcMVIlHbsXW7mheDjhOJ+V2y
-E4+46AamBX7rBDQrbPA0OaOeRWOWHQZ+xJG6Y7nCSBFFLEMZkQLAGiNWlAUsFyFj
-hUC+3HdYPZfk2TAVI5NglTcniPwvIGMmFlWmEIMKuqFDWcImz4uIisB0TSRUF7Cs
-YZ1RhoDbWW3YBn6J26RVXDJmVYWpUxdloLn/QcVsj9fnyZwzy50yj2/u/D+zN3Q7
-axrkJrunQsMr1GPdIysGm/Nfbpp3f3RDdltt2eVXuaUDp87lXTpzqAfO2rVgsKNS
-yLucms58U1wITnTvlybRyYlPryPJ7Rnpph9ZLypC75/eSrcHi14vSRmNYw2JpUvU
-Rz7dI4LeJ5Xffg5Pj3X6Wyu+LLtVm1ibk675/C4z98hBy4b5TvHne8EPo2WnW3fm
-btuTXZSRXNnfcsNazHonnvfad5OhK+my8a0bz+6deJ6YWte+e/m+tlUlPc8mW31H
-+xax7x0XxyMjfZvPl1fu6Kr+aK/JL5eG2q8P0ODVhtj6832rW7pKig9fG/Wm16S2
-VDw7XgpTp25OflqI3rKD5HHnLzB+RG8=
-=gbZF
+yMIsAnicrZJtSBRBHMbvUouuJAviqg8KKwdhYrs7uzuzF0UEFRRFiEFheczuzp7L
+XbvX7p7dFRa9EEpmEMFhkUUvJxVxFaH0IXvBiLygDylHRGpGUdGLvSJR1KzUp/rY
+fBlm5nl+88x//n2lRb6Av+d9S9vX0mdT/PlbnUkf/jk3t4NRLC3NhHcwMTIxkbhG
+HDcSMzQmzLAcyxGiiojVeFbDrMoLUJJVokuCgBQJYEXFiAWsrkCMAScpApAlGSAN
+cBDqEtQ0xLOYqWZ0w4wSO2EbpkuxBKuUKnEyhwQWyrKgKYjoAAkiDxHgRSgIEIk8
+T42NluM5aDgFO6TGsOgeXUQm4v1D/59zJydwSOVpQMIBamc1iUCF04lGrRhxnM7J
+ntAhtom3EKpOJ7dbphFtdONpprmaoQdNhkq82nqP+VtUo1pbKCFhW66lWnF62Oi6
+CSfsmd10wlNvI0rkNyeiGKZGq0kdTcR2DMtkwhxVqq7hgTkakWNpeljNkFTCsEnE
+8BQilBBLh3cPaaJIIMiQVSVIAMaspgoQ8JiFoq4ATdeRQDidB1BWMc+LmszrAkCY
+R4il/6RoBEoc471sq2kxYSDSnDhKmY4RNbGbtAnTfPvmpmKfP+CbXDLJazNfYGrZ
+n+Y7f23K90DPm+CGWK/y6e3owvbQnfLUaDb46Gzn568L9N5dR6eh45c6Ng5XfJxl
+d81sfbD08WDrqgrbvN5Z1DB6r0KcEf94bsXFF2P932pTrzOLC+9X9p/i6xNVHYdL
+YmP7vmy9MvR5eqG+uEx3dx660bZCzBf2LxuZ7RyvPFHV3Sw8WX3k3ZK60MPNs4sn
+7421Hu7ObRtpGHiZTw1dvv9q2Uhtbcvg2HKQORnqv7yr7UQuve6qnirK4gvjz7Ml
+0fEDr2MLM8lgV52ZM/coi0pXna5uD144fb+Q8e+et/bMj2xfPn/sze25q4fxwT2h
++X3u27uZVPRDffmc8jXrI8aP2o7xloHKp78AcaJMVg==
+=g0RJ
 -----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/yuzonightly
+
+==================================================================
+

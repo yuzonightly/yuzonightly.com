@@ -1,0 +1,4 @@
+git submodule add -b master <url>
+git submodule init
+git submodule update --init --recursive
+git submodule deinit <path_to_submodule>
