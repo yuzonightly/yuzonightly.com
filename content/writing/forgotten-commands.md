@@ -18,11 +18,17 @@ platform_links = ["https://github.com/yuzonightly/personal-site-posts"]
 docker pull <image>
 ```
 
+List images.
+
+```bash
+docker images
+```
+
 ```bash
 docker image rm <image>
 ```
 
-Specify port number for *host* and *container*.
+Specify port number for _host_ and _container_.
 
 ```bash
 docker run -d -p<host>:<container> <image>
@@ -33,7 +39,11 @@ docker run -d --name <name> <image>
 ```
 
 ```bash
-docker image rm <image>
+docker stop <container>
+```
+
+```bash
+docker start <container>
 ```
 
 List all containers.
@@ -42,16 +52,26 @@ List all containers.
 docker ps -a
 ```
 
-List images.
-
-```bash
-docker images
-```
-
 Show logs for the specified container.
 
 ```bash
 docker logs <container>
+```
+
+```bash
+docker logs <container> -f
+```
+
+```bash
+docker exec -it <container> /bin/bash
+```
+
+```bash
+docker network ls
+```
+
+```bash
+docker network create <network>
 ```
 
 ## Hardhat
@@ -76,4 +96,14 @@ git reset --soft HEAD~1
 
 ```bash
 git merge origin/main
+```
+
+```bash
+git pull
+```
+
+## sea-plus
+
+```bash
+protoc -I <dir> 
 ```

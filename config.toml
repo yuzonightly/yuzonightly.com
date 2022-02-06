@@ -10,8 +10,3 @@ build_search_index = false
 [markdown]
 highlight_code = true
 highlight_theme = "dracula"
-
-# Set to false once no longer needed.
-[extra]
-katex_enable = true
-katex_auto_render = true
