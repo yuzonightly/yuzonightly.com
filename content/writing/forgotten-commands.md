@@ -91,15 +91,78 @@ npx hardhat run scripts/deploy.js --network localhost
 ## GitHub
 
 ```bash
-git reset --soft HEAD~1
+git status
 ```
 
 ```bash
-git merge origin/main
+git push
 ```
+
+We can also run `git fetch && git merge`.
 
 ```bash
 git pull
+```
+
+```bash
+git logs
+```
+
+```bash
+git add <files>
+```
+
+```bash
+git commit
+```
+
+```bash
+git cat-file -p <commit>
+```
+
+```bash
+git log --all --graph --decorate --oneline
+```
+
+```bash
+git checkout <reference>
+```
+
+Changes made to file between two commits.
+
+```bash
+git diff --color=always
+git diff <reference> <reference> <file>
+```
+
+List branches (verbose).
+
+```bash
+git branch -vv
+```
+
+Create a new branch that points to the current working branch (HEAD). Don't forget to `git checkout <branch>`. We can also just `git checkout -b <branch>`.
+
+```bash
+git branch <branch>
+```
+
+```bash
+git blame <file>
+```
+
+```bash
+git show <reference>
+```
+
+```bash
+git merge <branch>
+git add .
+git merge --continue
+```
+
+```bash
+git reset --soft HEAD~1
 ```
 
 ## sea-plus
